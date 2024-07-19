@@ -1,0 +1,284 @@
+/*************************
+ * RESET AND BASE STYLES *
+ *************************/
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #FFFFFF;
+  background-color: #262626;
+}
+
+/*****************
+ * COMMON STYLES *
+ *****************/
+
+.custom-input {
+  border-radius: 100px;
+  border: 1px solid #FFFFFF;
+  padding: 30px 40px;
+}
+
+.custom-button {
+  font-weight: 600;
+  padding: 30px 40px;
+  border-radius: 100px;
+  background-color: #34BF34;
+}
+
+.custom-button:hover,
+.custom-button:active {
+  background-color: #14A414;
+}
+
+.custom-button:disabled {
+  background-color: #34BF3480;
+}
+
+/**********
+ * HEADER *
+ **********/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.header__menu ul>a,
+.header__menu ul>a {
+  margin-right: 35px;
+}
+
+/********************
+ * APPLICATION-CONN *
+ ********************/
+
+.application-conn {
+  margin-top: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.application-conn__title {
+  font-size: 55px;
+  font-weight: 700;
+
+}
+
+.application-conn__description {
+  margin-top: 42px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.application-conn__from {
+  margin-top: 57px;
+}
+
+.application-conn__from input {
+  margin-right: 20px;
+  width: 350px;
+  text-align: center;
+}
+
+/************
+ * SPONSORS *
+ ************/
+
+.sponsors {
+  display: flex;
+  justify-content: center;
+  margin-top: 180px;
+}
+
+/**************
+ * ADVANTAGES *
+ **************/
+
+.advantages {
+  position: relative;
+  margin: 130px 250px 0 250px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.advantages::after {
+  content: url(/assets/img/advantages-bg.svg);
+  position: absolute;
+}
+
+.advantages__item-indent {
+  margin-top: 95px;
+}
+
+.advantages__item__title {
+  margin-top: 25px;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.advantages__item__title span {
+  color: #34BF34;
+}
+
+.advantages__item__description {
+  margin-top: 18px;
+  font-size: 16px;
+}
+
+.advantages__item__description-line {
+  line-height: 182%;
+}
+
+.advantages__item__list {
+  margin-top: 15px;
+}
+
+.advantages__item__list span {
+  font-weight: 600;
+}
+
+.advantages__item__list ul {
+  margin-top: 14px;
+}
+
+.advantages__item__list ul li::before {
+  content: "•";
+  font-size: 25px;
+  color: #34BF34;
+  margin-right: 3px;
+}
+
+/**********
+ * FOOTER *
+ **********/
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  background-color: #1D1D1D;
+  padding: 66px 0;
+  margin-top: 140px;
+}
+
+.footer__description {
+  color: #FFFFFFB2;
+}
