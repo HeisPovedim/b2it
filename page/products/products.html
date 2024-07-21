@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+    integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="/assets/styles/base-styles.css">
+  <link rel="stylesheet" href="/assets/styles/common-styles.css">
+  <link rel="stylesheet" href="/assets/styles/header.css">
+  <link rel="stylesheet" href="/assets/styles/footer.css">
+  <link rel="stylesheet" href="./products.css">
+  <title>B2IT</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top-row">
+      <div class="header__menu">
+        <ul>
+          <li><a href="page/about.html">О компании</a></li>
+          <li><a href="page/products.html">Продукты</a></li>
+        </ul>
+      </div>
+      <img src="/assets/img/logo.png" />
+      <div class="header__menu">
+        <ul>
+          <li><a href="page/technologies.html">Технологии</a></li>
+          <li><a href="page/contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <svg class="header__burger header__burger-rotate" viewBox="0 0 100 100" width="80"
+        onclick="this.classList.toggle('active')" style="display: none;">
+        <path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+        <path class="line middle" d="m 70,50 h -30" />
+        <path class="line bottom"
+          d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+      </svg>
+    </div>
+    <div class="header__bottom-row">
+      <div class="header__burger_menu">
+        <ul>
+          <li><a href="page/about.html">О компании</a></li>
+          <li><a href="page/products.html">Продукты</a></li>
+          <li><a href="page/technologies.html">Технологии</a></li>
+          <li><a href="page/contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="products">
+    <h1 class="product__title">Наши продукты</h1>
+    <div class="product__items">
+      <div class="product__items__preview">CRM-<br />Платформа</div>
+      <span class="product__items__description">
+        это мультисистемное и многофункциональное программное
+        обеспечение, полностью разработанное B2IT и позволяющее
+        собирать максимально возможную аналитику (с внешних
+        и внутренних ресурсов и сервисов) по привлеченным клиентам,
+      </span>
+    </div>
+    <div class="product__items">
+      <div class="product__items__preview">Аудит</div>
+      <span class="product__items__description">
+        это программный продукт, позволяющий за счёт точечной
+        настройки (на основе исторических данных анализируемой
+        компании и плановых показателей, которые необходимо достичь)
+        проводить автоматический аудит компании, а также анализировать
+      </span>
+    </div>
+    <div class="product__items">
+      <div class="product__items__preview">Онлайн-<br />Аутсорс</div>
+      <span class="product__items__description">
+        Продукт "Онлайн-Аутсорс" - позволяет оптимизировать Ваш
+        онлайн бизнес за счёт переключения части Ваших процессов
+        через наш программный комплекс
+      </span>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <img src="/assets/img/logo.png" />
+    <div class="footer__description">
+      ООО «В2 АЙТИ», ИНН 6311195346, КПП 631101001, ОГРН 1226300048017, р/с 40702810854400077509, к/с<br />
+      30101810200000000607 в ПАО Сбербанк, БИК 043601607, 443093, г. Самара, ул. Мориса Тореза 1А, офис 513А
+    </div>
+  </footer>
+
+  <script src="assets/js/input-patternt.js"></script>
+  <script src="assets/js/hamburger.js"></script>
+
+</body>
+
+</html>

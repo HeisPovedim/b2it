@@ -1,0 +1,164 @@
+/**********
+ * HEADER *
+ **********/
+
+.header,
+.header__top-row {
+  display: flex;
+  align-items: center;
+  background-color: #262626;
+}
+
+.header {
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.header__top-row {
+  justify-content: space-between;
+  width: 1075px;
+}
+
+.header__menu ul li {
+  display: inline;
+}
+
+.header__menu ul li:first-child a {
+  margin-right: 35px;
+}
+
+.header__burger {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.header__burger-rotate.active {
+  transform: rotate(45deg);
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #ffffff;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.header__burger .top {
+  stroke-dasharray: 40 121;
+}
+
+.header__burger .bottom {
+  stroke-dasharray: 40 121;
+}
+
+.header__burger.active .top {
+  stroke-dashoffset: -68px;
+}
+
+.header__burger.active .bottom {
+  stroke-dashoffset: -68px;
+}
+
+.header__bottom-row {
+  display: none;
+}
+
+.header__burger_menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 10px;
+  background-color: #262626;
+}
+
+.header__burger_menu a:hover,
+.header__burger_menu a:active {
+  text-decoration: underline;
+}
+
+.header__burger_menu::before,
+.header__burger_menu::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #FFFFFF;
+  border-radius: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.header__burger_menu::before {
+  width: 100px;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.header__burger_menu::after {
+  width: 200px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.header__burger_menu ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+/**********
+ * @MEDIA *
+ **********/
+/* Десктопы */
+@media (max-width: 1200px) {
+  .header__top-row {
+    width: 800px;
+  }
+}
+
+/* Планшеты */
+@media (min-width: 900px) {
+  .header__burger_menu {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .header {
+    margin-top: 15px;
+    flex-direction: column;
+  }
+
+  .header__top-row {
+    width: 95%;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__burger {
+    display: block !important;
+  }
+
+  .header__burger_menu {
+    display: flex;
+  }
+
+  .application-conn__title br {
+    display: none;
+  }
+}

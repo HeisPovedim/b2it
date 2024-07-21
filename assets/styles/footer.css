@@ -1,0 +1,27 @@
+/**********
+ * FOOTER *
+ **********/
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  background-color: #1D1D1D;
+  padding: 66px 20px;
+  margin-top: 140px;
+}
+
+.footer__description {
+  color: #FFFFFFB2;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 10px;
+    line-height: 20px;
+  }
+}

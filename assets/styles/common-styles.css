@@ -1,0 +1,29 @@
+/*****************
+ * COMMON STYLES *
+ *****************/
+
+.custom-input {
+  border-radius: 100px;
+  border: 1px solid #FFFFFF;
+  padding: 30px 40px;
+}
+
+.custom-button {
+  font-weight: 600;
+  padding: 30px 40px;
+  border-radius: 100px;
+  background-color: #34BF34;
+}
+
+.custom-button:hover,
+.custom-button:active {
+  background-color: #14A414;
+}
+
+.custom-button:disabled {
+  background-color: #34BF3480;
+}
+
+.hidden {
+  display: none !important;
+}
