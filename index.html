@@ -6,46 +6,75 @@
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+    integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="assets/css/styles.css">
   <title>B2IT</title>
 </head>
 
 <body>
   <header class="header">
-    <div class="header__menu">
-      <ul>
-        <a href="page/about.html">О компании</a>
-        <a href="page/products.html">Продукты</a>
-      </ul>
+    <div class="header__top-row">
+      <div class="header__menu">
+        <ul>
+          <li><a href="page/about.html">О компании</a></li>
+          <li><a href="page/products.html">Продукты</a></li>
+        </ul>
+      </div>
+      <img src="assets/img/logo.png" />
+      <div class="header__menu">
+        <ul>
+          <li><a href="page/technologies.html">Технологии</a></li>
+          <li><a href="page/contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <svg class="header__burger header__burger-rotate" viewBox="0 0 100 100" width="80"
+        onclick="this.classList.toggle('active')" style="display: none;">
+        <path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+        <path class="line middle" d="m 70,50 h -30" />
+        <path class="line bottom"
+          d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+      </svg>
     </div>
-    <img src="assets/img/logo.png"></img>
-    <div class="header__menu">
-      <ul>
-        <a href="page/technologies.html">Технологии</a>
-        <a href="page/contacts.html">Контакты</a>
-      </ul>
+    <div class="header__bottom-row">
+      <div class="header__burger_menu">
+        <ul>
+          <li><a href="page/about.html">О компании</a></li>
+          <li><a href="page/products.html">Продукты</a></li>
+          <li><a href="page/technologies.html">Технологии</a></li>
+          <li><a href="page/contacts.html">Контакты</a></li>
+        </ul>
+      </div>
     </div>
   </header>
 
   <div class="application-conn">
-    <h1 class="application-conn__title"><span>B2IT</span> - Ускорьте свое развитие
+    <h1 class="application-conn__title"><span>B2IT</span> - Ускорьте свое развитие<br />
       с нашими технологиями!</h1>
     <span class="application-conn__description">В2Айти - это разработчик финансовых программных продуктов и
       комплексов,<br />
       направленных на развитие бизнеса в сети Интернет
     </span>
     <div class="application-conn__from">
-      <input class="custom-input" placeholder="mdv0899@gmail.com" />
-      <button class="custom-button">Оставить заявку на подключение</button>
+      <form action="">
+        <input class="custom-input" id="email-input" type="email" placeholder="mdv0899@gmail.com" required />
+        <button class="custom-button" type="submit">Оставить заявку на подключение</button>
+      </form>
     </div>
   </div>
 
   <div class="sponsors">
-    <img src="assets/img/sponsors.png" />
+    <picture>
+      <source srcset="./assets/img/sponsors.png" media="(min-width: 1200px)" />
+      <source srcset="./assets/img/sponsors-mobile.png" media="(max-width: 900px)" />
+      <img src="./assets/img/sponsors.png" />
+    </picture>
   </div>
 
   <div class="advantages">
@@ -56,7 +85,7 @@
         принятие решений
       </div>
       <div class="advantages__item__description">
-        Наши IT-продукты позволят Вам осуществлять<br/>
+        Наши IT-продукты позволят Вам осуществлять<br />
         автоматические сценарии
         проверки заемщика.</div>
       <div class="advantages__item__list">
@@ -78,7 +107,7 @@
       <div class="advantages__item__list">
         <span>В наших IT-решениях реализованы:</span>
         <ul>
-          <li> ГПолные интеграции с основными каналами<br/> привлечения заемщиков;</li>
+          <li> ГПолные интеграции с основными каналами<br /> привлечения заемщиков;</li>
           <li>Сквозная аналитика;</li>
           <li>Автоматические отчеты по основным KPI.</li>
         </ul>
@@ -91,8 +120,8 @@
         взыскания задолженности
       </div>
       <div class="advantages__item__description advantages__item__description-line">
-        Наши ИИ-разработки позволяют использовать<br/>
-        готовые скрипты и инструменты взаимодействия с<br/>
+        Наши ИИ-разработки позволяют использовать<br />
+        готовые скрипты и инструменты взаимодействия с<br />
         должниками в рамках закона 230-ФЗ
       </div>
     </div>
@@ -102,14 +131,14 @@
   <footer class="footer">
     <img src="/assets/img/logo.png" />
     <div class="footer__description">
-      ООО «В2 АЙТИ», ИНН 6311195346, КПП 631101001, ОГРН 1226300048017, р/с 40702810854400077509, к/с<br/>
+      ООО «В2 АЙТИ», ИНН 6311195346, КПП 631101001, ОГРН 1226300048017, р/с 40702810854400077509, к/с<br />
       30101810200000000607 в ПАО Сбербанк, БИК 043601607, 443093, г. Самара, ул. Мориса Тореза 1А, офис 513А
     </div>
   </footer>
 
+  <script src="assets/js/input-patternt.js"></script>
+  <script src="assets/js/hamburger.js"></script>
 
-  <script src="js/calc.js"></script>
-  <script src="js/tabs.js"></script>
 </body>
 
 </html>
