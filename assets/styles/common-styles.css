@@ -24,6 +24,13 @@
   background-color: #34BF3480;
 }
 
+.custom-li-dot li::before {
+  content: "•";
+  font-size: 25px;
+  color: #34BF34;
+  margin-right: 3px;
+}
+
 .hidden {
   display: none !important;
 }

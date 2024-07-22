@@ -98,13 +98,6 @@
   margin-top: 14px;
 }
 
-.advantages__item__list ul li::before {
-  content: "•";
-  font-size: 25px;
-  color: #34BF34;
-  margin-right: 3px;
-}
-
 /**********
  * @MEDIA *
  **********/
