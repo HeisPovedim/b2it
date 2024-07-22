@@ -18,11 +18,13 @@
   <link rel="stylesheet" href="/assets/styles/common-styles.css">
   <link rel="stylesheet" href="/assets/styles/header.css">
   <link rel="stylesheet" href="/assets/styles/footer.css">
-  <link rel="stylesheet" href="./css/container-products.css">
-  <link rel="stylesheet" href="./css/container-important.css">
-  <link rel="stylesheet" href="./css/container-advantages.css">
-  <link rel="stylesheet" href="./css/container-useful.css">
-  <link rel="stylesheet" href="./css/container-directions.css">
+  <link rel="stylesheet" href="./css/con-products.css">
+  <link rel="stylesheet" href="./css/con-important.css">
+  <link rel="stylesheet" href="./css/con-advantages.css">
+  <link rel="stylesheet" href="./css/con-useful.css">
+  <link rel="stylesheet" href="./css/con-directions.css">
+  <link rel="stylesheet" href="./css/con-employ.css">
+  <link rel="stylesheet" href="./css/con-service.css">
   <link rel="stylesheet" href="./products.css">
   <title>B2IT</title>
 </head>
@@ -63,8 +65,8 @@
     </div>
   </header>
 
-  <section class="containers">
-    <section class="container__products">
+  <div class="containers">
+    <div class="container__products">
       <div class="products">
         <h1 class="product__title">Наши продукты</h1>
         <div class="product__items">
@@ -122,12 +124,12 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="container__important">
+    <div class="container__important">
       <div class="important">
         <h1 class="important__title">Важно!</h1>
-        <div class="important__item__box">
+        <div class="important__items">
           <div class="important__item">
             <span class="important__item__number">1.</span>
             <span class="important__item__description">
@@ -155,15 +157,15 @@
           P.S.: Узнать цену наших продуктов вы можете оставив заявку на подключение на нашем сайте.
         </span>
       </div>
-    </section>
+    </div>
 
-    <section class="container__advantages">
+    <div class="container__advantages">
       <div class="advantages">
         <h1 class="advantages__title">Почему именно мы?</h1>
         <span class="advantages__adv">Наши преимущества</span>
         <div class="advantages__items">
           <div class="advantages__item">
-            <img src="/assets/img/adv-prevention.png" alt="Prevention" />
+            <img src="./img/adv-prevention.png" alt="Prevention" />
             <div class="advantages__item__info">
               <h1>Предотвращение</h1>
               <span>
@@ -173,7 +175,7 @@
             </div>
           </div>
           <div class="advantages__item">
-            <img src="/assets/img/adv-improvement.png" alt="Improvement" />
+            <img src="./img/adv-improvement.png" alt="Improvement" />
             <div class="advantages__item__info">
               <h1>Улучшение</h1>
               <span>
@@ -183,7 +185,7 @@
             </div>
           </div>
           <div class="advantages__item">
-            <img src="/assets/img/adv-optimization.png" alt="Optimization" />
+            <img src="./img/adv-optimization.png" alt="Optimization" />
             <div class="advantages__item__info">
               <h1>Оптимизация</h1>
               <span>
@@ -193,7 +195,7 @@
             </div>
           </div>
           <div class="advantages__item">
-            <img src="/assets/img/adv-forecasting.png" alt="Forecasting" />
+            <img src="./img/adv-forecasting.png" alt="Forecasting" />
             <div class="advantages__item__info">
               <h1>Прогнозирование</h1>
               <span>
@@ -203,7 +205,7 @@
             </div>
           </div>
           <div class="advantages__item">
-            <img src="/assets/img/adv-upgrowth.png" alt="Upgrowth" />
+            <img src="./img/adv-upgrowth.png" alt="Upgrowth" />
             <div class="advantages__item__info">
               <h1>Рост</h1>
               <span>
@@ -214,14 +216,14 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="container__useful">
+    <div class="container__useful">
       <div class="useful">
         <h1 class="useful__title">Кому полезно?</h1>
         <div class="useful__items">
           <div class="useful__item">
-            <img src="/assets/img/useful-logo-green.png" alt="Useful" />
+            <img src="./img/useful-logo-green.png" alt="Useful" />
             <h2 class="useful__item__title">МФО (МФК, МКК) и КПК</h2>
             <ul class="useful__item__description custom-li-dot">
               <li>Проведение аудита компании с целью достижения нужных бизнес показателей</li>
@@ -232,7 +234,7 @@
             </ul>
           </div>
           <div class="useful__item">
-            <img src="/assets/img/useful-logo-gray.png" alt="Useful" />
+            <img src="./img/useful-logo-gray.png" alt="Useful" />
             <h2 class="useful__item__title">Банки</h2>
             <ul class="useful__item__description custom-li-dot">
               <li>Мы работаем над повышением эффективности внутренних процессов компании</li>
@@ -245,9 +247,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="container__directions">
+    <div class="container__directions">
       <div class="directions">
         <h1 class="directions__title">Наши ключевые направления</h1>
         <div class="directions__items">
@@ -294,8 +296,45 @@
           </div>
         </div>
       </div>
-    </section>
-  </section>
+    </div>
+    <div class="container__employ">
+      <div class="employ">
+        <div class="employ__title">Мы используем</div>
+        <div class="employ__items">
+          <div class="employ__item">
+            <img src="./img/employ-star.png" alt="Star" />
+            <span class="employ__item__description">Открытые данные</span>
+            <span class="employ__item__poscript">
+              Триггеры по клиентам на основе<br>
+              открытых данных в сети интернет
+            </span>
+          </div>
+          <div class="employ__item">
+            <img src="./img/employ-star.png" alt="Star" />
+            <span class="employ__item__description">Данные заемщика</span>
+          </div>
+          <div class="employ__item">
+            <img src="./img/employ-star.png" alt="Star" />
+            <span class="employ__item__description">Устройства клиента</span>
+            <span class="employ__item__poscript">
+              Данные позволяющие выявить<br>
+              фрод и мошенников
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container__service">
+      <div class="service">
+        <h1 class="service__title">Продукты от Б2АЙТИ</h1>
+        <h1 class="service__title__mobile" style="display: none;">Наши продукты</h1>
+        <span class="service__description">
+          Наши продукты являются на 100% Российской разработкой и обслуживаются
+          исключительно специалистами РФ на территории Российской Федерации
+        </span>
+      </div>
+    </div>
+  </div>
 
   <footer class="footer">
     <img src="/assets/img/logo.png" />

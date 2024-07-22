@@ -3,7 +3,7 @@
  *************/
 
 .important,
-.important__item__box,
+.important__items,
 .important__item {
   display: flex;
 }
@@ -11,37 +11,41 @@
 .important {
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: #1D1D1D;
   border-radius: 20px;
-  padding: 70px 0;
+  padding: clamp(20px, 5vw, 70px) clamp(20px, 3vw, 30px);
+  width: min(1264px, 100%);
 }
 
 .important__title {
-  font-size: 40px;
+  font-size: clamp(28px, 7vw, 40px);
   font-weight: 700;
 }
 
-.important__item__box {
-  flex-direction: row;
-  gap: 60px;
+.important__items {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
   margin-top: 30px;
 }
-
 .important__item {
   align-items: flex-start;
+  gap: 10px;
 }
 
 .important__item__number {
-  font-size: 42px;
+  font-size: clamp(28px, 7vw, 42px);
   font-weight: 600;
   color: #34BF34;
 }
 
 .important__item__description {
-  padding: 10px 0px 0px 10px;
+  font-size: clamp(18px, 4vw, 20px);
 }
 
 .important__postscript {
+  text-align: center;
   margin-top: 45px;
   font-size: 16px;
   color: #FFFFFF80;
