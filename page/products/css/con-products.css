@@ -2,19 +2,6 @@
  * PRODUCTS *
  ************/
 
-.products,
-.product__items,
-.product__items__preview,
-.product__mobile__item {
-  display: flex;
-  align-items: center;
-}
-
-.products,
-.product__mobile__item {
-  flex-direction: column;
-}
-
 .product__items__preview,
 .product__mobile__item {
   border-radius: 20px;
@@ -31,20 +18,22 @@
 }
 
 .product__items {
-  display: grid;
   grid-template-columns: auto minmax(400px, 647px);
   gap: 50px;
   margin-top: 55px;
 }
 
 .product__items__preview {
-  justify-content: center;
   font-size: 32px;
   font-weight: 600;
   text-align: center;
   border: 1px solid #34BF34;
   width: 311px;
   height: 211px;
+}
+
+.product__items__description {
+  line-height: clamp(25px, 3.2vw, 32px);
 }
 
 .product__mobile__item {

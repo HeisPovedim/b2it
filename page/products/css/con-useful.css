@@ -2,30 +2,12 @@
  * USEFUL *
  **********/
 
-.useful,
-.useful__items,
-.useful__item,
-.useful__item__description {
-  display: flex;
-}
-
-.useful,
-.useful__item,
-.useful__item__description {
-  flex-direction: column;
-}
-
-.useful {
-  align-items: center;
-}
-
 .useful__title {
   font-size: clamp(26px, 6vw, 40px);
   font-weight: 700;
 }
 
 .useful__items {
-  flex-direction: row;
   gap: 20px;
   margin-top: 55px;
 }

@@ -2,19 +2,10 @@
  * DIRECTIONS *
  **************/
 
-.directions,
-.directions__items,
-.directions__item,
-.directions__items-left,
-.directions__items-right,
 .directions__item__description ul {
   display: flex;
 }
 
-.directions,
-.directions__item,
-.directions__items-left,
-.directions__items-right,
 .directions__item__description ul {
   flex-direction: column;
 }
@@ -25,7 +16,6 @@
 }
 
 .directions {
-  align-items: center;
   background-image: url("../img/directions-bg.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -50,7 +40,6 @@
 
 .directions__items-left {
   align-items: flex-end;
-  justify-content: center;
   text-align: right;
 }
 

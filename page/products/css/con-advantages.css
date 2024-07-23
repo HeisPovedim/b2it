@@ -2,21 +2,6 @@
  * ADVANTAGES *
  **************/
 
-.advantages,
-.advantages__items,
-.advantages__item {
-  display: flex;
-}
-
-.advantages,
-.advantages__items {
-  align-items: center;
-}
-
-.advantages {
-  flex-direction: column;
-}
-
 .advantages__title {
   font-size: clamp(26px, 6vw, 40px);
   font-weight: 700;
@@ -30,8 +15,7 @@
 
 .advantages__items {
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 90px;
+  gap: clamp(40px, calc(9vw + (1000px - 100%) * -0.2), 90px);
   margin-top: 50px;
   width: min(1200px, 100%);
 }

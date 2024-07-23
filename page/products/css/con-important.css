@@ -2,16 +2,7 @@
  * IMPORTANT *
  *************/
 
-.important,
-.important__items,
-.important__item {
-  display: flex;
-}
-
 .important {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: #1D1D1D;
   border-radius: 20px;
   padding: clamp(20px, 5vw, 70px) clamp(20px, 3vw, 30px);
@@ -25,10 +16,10 @@
 
 .important__items {
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
+  gap: clamp(20px, calc(10vw + (1000px - 100%) * -0.4), 100px);
   margin-top: 30px;
 }
+
 .important__item {
   align-items: flex-start;
   gap: 10px;
@@ -42,6 +33,7 @@
 
 .important__item__description {
   font-size: clamp(18px, 4vw, 20px);
+  line-height: clamp(25px, 3.2vw, 32px);
 }
 
 .important__postscript {

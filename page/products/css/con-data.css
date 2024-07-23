@@ -1,0 +1,19 @@
+.data {
+  width: min(936px, 100%);
+}
+
+.data__items {
+  grid-template-columns: clamp(300px, 35.5vw, 355px) clamp(300px, 43.5vw, 435px);
+  grid-template-rows: auto auto;
+  justify-content: center;
+  column-gap: clamp(45px, 8vw, 80px);
+  row-gap: clamp(45px, 8vw, 80px);
+}
+
+.data__item {
+  gap: 20px;
+}
+
+.data__item__info {
+  gap: 10px;
+}

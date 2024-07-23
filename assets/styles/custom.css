@@ -2,6 +2,10 @@
  * COMMON STYLES *
  *****************/
 
+.hidden {
+  display: none !important;
+}
+
 .custom-input {
   border-radius: 100px;
   border: 1px solid #FFFFFF;
@@ -31,6 +35,31 @@
   margin-right: 3px;
 }
 
-.hidden {
-  display: none !important;
+.title-green {
+  color: #34BF34;
+}
+
+/* DISPLAY FLEX */
+.ds-flex {
+  display: flex;
+}
+
+.ds-grid {
+  display: grid;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.fd-column {
+  flex-direction: column;
+}
+
+.fd-row {
+  flex-direction: row;
 }
