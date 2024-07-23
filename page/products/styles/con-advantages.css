@@ -2,6 +2,12 @@
  * ADVANTAGES *
  **************/
 
+.advantages {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .advantages__title {
   font-size: clamp(26px, 6vw, 40px);
   font-weight: 700;
@@ -14,14 +20,23 @@
 }
 
 .advantages__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: clamp(40px, calc(9vw + (1000px - 100%) * -0.2), 90px);
-  margin-top: 50px;
+  margin-top: clamp(20px, calc(5vw + (1000px - 100%) * -0.02), 50px);
   width: min(1200px, 100%);
 }
 
 .advantages__item {
+  display: flex;
   gap: 20px;
+}
+
+.advantages__item img {
+  width: clamp(65px, 7.4vw, 74px);
+  height: clamp(80px, 9vw, 90px);
 }
 
 .advantages__item__info h1 {

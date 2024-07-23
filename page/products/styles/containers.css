@@ -1,0 +1,35 @@
+/**************
+ * CONTAINERS *
+ **************/
+
+.containers {
+  margin: 0 20px 0 20px;
+}
+
+.container-products {
+  margin-top: clamp(30px, calc(9vw + (1000px - 100%) * -0.2), 90px);
+}
+
+.container-important,
+.container-service {
+  margin: clamp(70px, calc(13vw + (1000px - 100%) * -0.2), 130px) auto 0 auto;
+}
+
+.container-advantages,
+.container-useful,
+.container-directions,
+.container-employ,
+.container-data {
+  margin-top: clamp(70px, calc(13vw + (1000px - 100%) * -0.1), 130px);
+}
+
+.container-important,
+.container-service,
+.container-data {
+  display: flex;
+  justify-content: center;
+}
+
+.container-data {
+  margin-bottom: clamp(70px, calc(13vw + (1000px - 100%) * -0.1), 130px);
+}

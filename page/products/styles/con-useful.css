@@ -2,12 +2,21 @@
  * USEFUL *
  **********/
 
+.useful {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .useful__title {
   font-size: clamp(26px, 6vw, 40px);
   font-weight: 700;
 }
 
 .useful__items {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   gap: 20px;
   margin-top: 55px;
 }
@@ -26,10 +35,12 @@
 }
 
 .useful__item {
+  display: flex;
   align-items: flex-start;
+  flex-direction: column;
   gap: 30px;
   padding: 45px clamp(20px, 4vmin, 45px);
-  width: 550px;
+  width: min(550px, 100%);
 }
 
 .useful__item__title {
@@ -38,6 +49,8 @@
 }
 
 .useful__item__description {
+  display: flex;
+  flex-direction: column;
   font-size: 14px;
   line-height: 22px;
   gap: 10px;

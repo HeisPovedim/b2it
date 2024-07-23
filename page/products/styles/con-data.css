@@ -1,8 +1,12 @@
 .data {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: min(936px, 100%);
 }
 
 .data__items {
+  display: grid;
   grid-template-columns: clamp(300px, 35.5vw, 355px) clamp(300px, 43.5vw, 435px);
   grid-template-rows: auto auto;
   justify-content: center;
@@ -11,9 +15,13 @@
 }
 
 .data__item {
+  display: flex;
+  flex-direction: row;
   gap: 20px;
 }
 
 .data__item__info {
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 }

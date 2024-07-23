@@ -14,24 +14,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="/assets/styles/base-styles.css">
-  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/assets/styles/basic.css">
+  <link rel="stylesheet" href="/assets/styles/custom.css">
   <link rel="stylesheet" href="/assets/styles/header.css">
   <link rel="stylesheet" href="/assets/styles/footer.css">
-  <link rel="stylesheet" href="/assets/styles/common-styles.css">
+  <link rel="stylesheet" href="/index.css">
   <title>B2IT</title>
 </head>
 
 <body>
   <header class="header">
-    <div class="header__top-row">
-      <div class="header__menu">
+    <div class="header__native">
+      <div class="header__menu"">
         <ul>
-          <li><a href="page/about.html">О компании</a></li>
-          <li><a href="/page/products/products.html">Продукты</a></li>
+          <li><a href=" /page/about/about.html">О компании</a></li>
+        <li><a href="/page/products/products.html">Продукты</a></li>
         </ul>
       </div>
-      <img src="assets/img/logo.png" />
+      <a href="/index.html"><img src="/assets/img/logo.png" alt="Logo"></a>
       <div class="header__menu">
         <ul>
           <li><a href="page/technologies.html">Технологии</a></li>
@@ -46,11 +46,11 @@
           d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
       </svg>
     </div>
-    <div class="header__bottom-row">
+    <div class="header__nav">
       <div class="header__burger_menu">
         <ul>
-          <li><a href="page/about.html">О компании</a></li>
-          <li><a href="page/products.html">Продукты</a></li>
+          <li><a href="/page/about/about.html">О компании</a></li>
+          <li><a href="/page/products/products.html">Продукты</a></li>
           <li><a href="page/technologies.html">Технологии</a></li>
           <li><a href="page/contacts.html">Контакты</a></li>
         </ul>
@@ -58,84 +58,101 @@
     </div>
   </header>
 
-  <div class="application-conn">
-    <h1 class="application-conn__title"><span>B2IT</span> - Ускорьте свое развитие<br />
-      с нашими технологиями!</h1>
-    <span class="application-conn__description">В2Айти - это разработчик финансовых программных продуктов и
-      комплексов,<br />
-      направленных на развитие бизнеса в сети Интернет
-    </span>
-    <div class="application-conn__from">
-      <form action="">
-        <input class="custom-input" id="email-input" type="email" placeholder="mdv0899@gmail.com" required />
-        <button class="custom-button" type="submit">Оставить заявку на подключение</button>
-      </form>
-    </div>
-  </div>
+  <div class="containers">
 
-  <div class="sponsors">
-    <picture>
-      <source srcset="./assets/img/sponsors.png" media="(min-width: 1200px)" />
-      <source srcset="./assets/img/sponsors-mobile.png" media="(max-width: 900px)" />
-      <img src="./assets/img/sponsors.png" />
-    </picture>
-  </div>
+    <!-- APPLICATION-CONN -->
+    <div class="container-application-conn">
+      <div class="application-conn">
+        <h1 class="application-conn__title">
+          <span class="title-green">B2IT</span> - Ускорьте свое развитие<br>
+          с нашими технологиями!
+        </h1>
+        <p class="application-conn__description">
+          В2Айти - это разработчик финансовых программных продуктов и
+          комплексов,<br>
+          направленных на развитие бизнеса в сети Интернет
+        </p>
+        <div class="application-conn__form">
+          <form action="">
+            <input class="custom-input" id="email-input" type="email" placeholder="mdv0899@gmail.com" required />
+            <button class="custom-button" type="submit">Оставить заявку на подключение</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
-  <div class="advantages">
-    <div class="advantages__item">
-      <img src="assets/img/adv1.png" />
-      <div class="advantages__item__title">
-        <span>Оценка рисков</span> и быстрое<br />
-        принятие решений
-      </div>
-      <div class="advantages__item__description">
-        Наши IT-продукты позволят Вам осуществлять<br />
-        автоматические сценарии
-        проверки заемщика.</div>
-      <div class="advantages__item__list">
-        <span>Наши преимущества:</span>
-        <ul class="custom-li-dot">
-          <li>Готовые интеграции с БКИ, ФССП;</li>
-          <li>Удобный интерфейс для работы с заявками.</li>
-        </ul>
+    <!-- SPONSORS -->
+    <div class="container-sponsors">
+      <div class="sponsors">
+        <img src="/assets/img/sponsors-1.svg" alt="Sponsors">
+        <img src="/assets/img/sponsors-2.svg" alt="Sponsors">
+        <img src="/assets/img/sponsors-3.svg" alt="Sponsors">
+        <img src="/assets/img/sponsors-4.svg" alt="Sponsors">
+        <img src="/assets/img/sponsors-5.svg" alt="Sponsors">
       </div>
     </div>
-    <div></div>
-    <div class="advantages__item-indent"></div>
-    <div class="advantages__item advantages__item-indent">
-      <img src="assets/img/adv2.png" />
-      <div class="advantages__item__title">
-        <span>Управление</span> каналами<br />
-        привлечения клиентов
-      </div>
-      <div class="advantages__item__list">
-        <span>В наших IT-решениях реализованы:</span>
-        <ul class="custom-li-dot">
-          <li>ГПолные интеграции с основными каналами<br /> привлечения заемщиков;</li>
-          <li>Сквозная аналитика;</li>
-          <li>Автоматические отчеты по основным KPI.</li>
-        </ul>
+
+    <!-- ADVANTAGES -->
+    <div class="container-advantages">
+      <div class="advantages">
+        <div class="advantages__items-left">
+          <div class="advantages__item">
+            <img src="assets/img/adv1.png" />
+            <h1 class="advantages__item__title">
+              <span class="title-green">Оценка рисков</span> и быстрое<br>
+              принятие решений
+            </h1>
+            <p class="advantages__item__description text-break-all">
+              Наши IT-продукты позволят Вам осуществлять<br>
+              автоматические сценарии
+              проверки заемщика.
+            </p>
+            <div class="advantages__item__list">
+              <h2>Наши преимущества:</h2>
+              <ul class="custom-li-dot">
+                <li>Готовые интеграции с БКИ, ФССП;</li>
+                <li>Удобный интерфейс для работы с заявками.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="advantages__item">
+            <img src="assets/img/adv3.png" />
+            <h1 class="advantages__item__title">
+              <span class="title-green">Автоматизация</span> процесса<br>
+              взыскания задолженности
+            </h1>
+            <p class="advantages__item__description text-break-all">
+              Наши ИИ-разработки позволяют использовать<br>
+              готовые скрипты и инструменты взаимодействия с<br>
+              должниками в рамках закона 230-ФЗ
+            </p>
+          </div>
+        </div>
+        <div class="advantages__items-right">
+          <div class="advantages__item">
+            <img src="assets/img/adv2.png" />
+            <h1 class="advantages__item__title">
+              <span class="title-green">Управление</span> каналами<br>
+              привлечения клиентов
+            </h1>
+            <div class="advantages__item__list">
+              <h2>В наших IT-решениях реализованы:</h2>
+              <ul class="custom-li-dot">
+                <li>ГПолные интеграции с основными каналами<br> привлечения заемщиков;</li>
+                <li>Сквозная аналитика;</li>
+                <li>Автоматические отчеты по основным KPI.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="advantages__item advantages__item-indent">
-      <img src="assets/img/adv3.png" />
-      <div class="advantages__item__title">
-        <span>Автоматизация</span> процесса<br />
-        взыскания задолженности
-      </div>
-      <div class="advantages__item__description advantages__item__description-line">
-        Наши ИИ-разработки позволяют использовать<br />
-        готовые скрипты и инструменты взаимодействия с<br />
-        должниками в рамках закона 230-ФЗ
-      </div>
-    </div>
-    <div class="advantages__item-indent"></div>
   </div>
 
   <footer class="footer">
     <img src="/assets/img/logo.png" />
     <div class="footer__description">
-      ООО «В2 АЙТИ», ИНН 6311195346, КПП 631101001, ОГРН 1226300048017, р/с 40702810854400077509, к/с<br />
+      ООО «В2 АЙТИ», ИНН 6311195346, КПП 631101001, ОГРН 1226300048017, р/с 40702810854400077509, к/с<br>
       30101810200000000607 в ПАО Сбербанк, БИК 043601607, 443093, г. Самара, ул. Мориса Тореза 1А, офис 513А
     </div>
   </footer>

@@ -1,9 +1,40 @@
+/**************
+ * CONTAINERS *
+ **************/
+
+.containers {
+  position: relative;
+  margin: 0 20px 0 20px;
+}
+
+.container-application-conn {
+  margin-top: clamp(48px, calc(8vw + (1000px - 100%) * -0.2), 80px);
+}
+
+.container-sponsors {
+  margin-top: clamp(70px, calc(18vw + (1000px - 100%) * -0.2), 180px);
+}
+
+.container-advantages {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(70px, calc(13vw + (1000px - 100%) * -0.2), 130px);
+}
+
+.container-advantages {
+  margin-bottom: clamp(70px, calc(13vw + (1000px - 100%) * -0.1), 130px);
+}
+
+.container-advantages::before {
+  content: url(/assets/img/advantages-bg.svg);
+  position: absolute;
+}
+
 /********************
  * APPLICATION-CONN *
  ********************/
 
 .application-conn {
-  margin: 78px 10px 0 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,23 +46,29 @@
   font-weight: 700;
 }
 
-.application-conn__title span {
-  color: #01C201;
-}
-
 .application-conn__description {
-  margin-top: 42px;
+  margin-top: clamp(25px, calc(4.2vw + (1000px - 100%) * -0.2), 42px);
   font-size: 18px;
   font-weight: 400;
 }
 
-.application-conn__from {
-  margin-top: 57px;
+.application-conn__form {
+  margin-top: clamp(30px, calc(5.7vw + (1000px - 100%) * -0.2), 57px);
 }
 
-.application-conn__from input {
-  margin-right: 20px;
-  width: 350px;
+.application-conn__form form {
+  display: flex;
+  gap: 20px;
+}
+
+.application-conn__form input,
+.application-conn__form button {
+  width: clamp(300px, 44.2vw, 442px);
+  height: 84px;
+  padding: 18px 50px;
+}
+
+.application-conn__form input {
   text-align: center;
 }
 
@@ -41,8 +78,10 @@
 
 .sponsors {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 180px 50px 0 50px;
+  column-gap: 100px;
+  row-gap: 30px;
 }
 
 /**************
@@ -51,20 +90,35 @@
 
 .advantages {
   position: relative;
-  margin: 130px auto 0 auto;
-  width: 1000px;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  align-items: center;
+  gap: 65px;
 }
 
-.advantages::after {
-  content: url(/assets/img/advantages-bg.svg);
-  position: absolute;
+.advantages__item,
+.advantages__items-left,
+.advantages__items-right {
+  display: flex;
+  flex-direction: column;
 }
 
-.advantages__item-indent {
-  margin-top: 95px;
+.advantages__items-left .advantages__item:first-child img {
+  width: clamp(71px, 9.5vw, 95px);
+  height: clamp(62px, 8.4vw, 84px);
+}
+
+.advantages__items-left .advantages__item:last-child img {
+  width: clamp(79px, 14.4vw, 114px);
+  height: clamp(61px, 9.5vw, 95px);
+}
+
+.advantages__items-right .advantages__item img {
+  width: clamp(79px, 9.5vw, 95px);
+  height: clamp(74px, 9vw, 90px);
+}
+
+.advantages__items-left {
+  gap: 600px;
 }
 
 .advantages__item__title {
@@ -73,24 +127,16 @@
   font-weight: 500;
 }
 
-.advantages__item__title span {
-  color: #34BF34;
-}
-
 .advantages__item__description {
   margin-top: 18px;
   font-size: 16px;
-}
-
-.advantages__item__description-line {
-  line-height: 182%;
 }
 
 .advantages__item__list {
   margin-top: 15px;
 }
 
-.advantages__item__list span {
+.advantages__item__list h2 {
   font-weight: 600;
 }
 
@@ -103,17 +149,28 @@
  **********/
 
 @media (max-width: 1000px) {
-  .advantages {
-    width: auto;
-    grid-template-columns: repeat(1, 1fr);
-    margin: 130px 10px 0 10px;
-  }
 
-  .advantages::after {
+  /*************
+ * CONTAINER *
+ *************/
+  .container-advantages::before {
     content: url(/assets/img/advantages-mobile-bg.svg);
     position: absolute;
-    right: 0;
-    top: 20px
+    bottom: 25px;
+    right: -20px;
+  }
+
+  /**************
+ * ADVANTAGES *
+ **************/
+  .advantages {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .advantages,
+  .advantages__items-left {
+    gap: 60px;
   }
 }
 
@@ -129,14 +186,14 @@
     display: none;
   }
 
-  .application-conn__from form {
+  .application-conn__form form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    text-align: center;
   }
 
-  .application-conn__from input {
+  .application-conn__form input {
     margin: 0;
   }
 }

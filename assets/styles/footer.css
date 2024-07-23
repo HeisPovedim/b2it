@@ -9,7 +9,11 @@
   gap: 100px;
   background-color: #1D1D1D;
   padding: 66px 20px;
-  margin-top: 140px;
+}
+
+.footer img {
+  width: clamp(160px, 19.5vw, 233px);
+  height: clamp(63px, 7.7vw, 91px);
 }
 
 .footer__description {

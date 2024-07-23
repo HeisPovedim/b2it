@@ -2,6 +2,13 @@
  * EMPLOY *
  **********/
 
+.employ,
+.employ__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .employ {
   gap: clamp(25px, 7vw, 70px);
 }
@@ -12,6 +19,9 @@
 }
 
 .employ__items {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   width: 100%;
   gap: clamp(40px, calc(10vw + (1000px - 100%) * -0.2), 100px);
 }

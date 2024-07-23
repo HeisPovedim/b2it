@@ -13,33 +13,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="/assets/styles/basic.css">
   <link rel="stylesheet" href="/assets/styles/custom.css">
   <link rel="stylesheet" href="/assets/styles/header.css">
   <link rel="stylesheet" href="/assets/styles/footer.css">
-  <link rel="stylesheet" href="./css/con-products.css">
-  <link rel="stylesheet" href="./css/con-important.css">
-  <link rel="stylesheet" href="./css/con-advantages.css">
-  <link rel="stylesheet" href="./css/con-useful.css">
-  <link rel="stylesheet" href="./css/con-directions.css">
-  <link rel="stylesheet" href="./css/con-employ.css">
-  <link rel="stylesheet" href="./css/con-service.css">
-  <link rel="stylesheet" href="./css/con-data.css">
+  <link rel="stylesheet" href="./styles/containers.css">
+  <link rel="stylesheet" href="./styles/con-products.css">
+  <link rel="stylesheet" href="./styles/con-important.css">
+  <link rel="stylesheet" href="./styles/con-advantages.css">
+  <link rel="stylesheet" href="./styles/con-useful.css">
+  <link rel="stylesheet" href="./styles/con-directions.css">
+  <link rel="stylesheet" href="./styles/con-employ.css">
+  <link rel="stylesheet" href="./styles/con-service.css">
+  <link rel="stylesheet" href="./styles/con-data.css">
   <link rel="stylesheet" href="./products.css">
   <title>B2IT</title>
 </head>
 
 <body>
   <header class="header">
-    <div class="header__top-row">
-      <div class="header__menu">
+    <div class="header__native">
+      <div class="header__menu"">
         <ul>
-          <li><a href="page/about.html">О компании</a></li>
-          <li><a href="page/products.html">Продукты</a></li>
+          <li><a href="/page/about/about.html">О компании</a></li>
+        <li><a href="/page/products/products.html">Продукты</a></li>
         </ul>
       </div>
-      <img src="/assets/img/logo.png" />
+      <a href="/index.html"><img src="/assets/img/logo.png" alt="Logo"></a>
       <div class="header__menu">
         <ul>
           <li><a href="page/technologies.html">Технологии</a></li>
@@ -54,11 +55,11 @@
           d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
       </svg>
     </div>
-    <div class="header__bottom-row">
+    <div class="header__nav">
       <div class="header__burger_menu">
         <ul>
-          <li><a href="page/about.html">О компании</a></li>
-          <li><a href="page/products.html">Продукты</a></li>
+          <li><a href="/page/about/about.html">О компании</a></li>
+          <li><a href="/page/products/products.html">Продукты</a></li>
           <li><a href="page/technologies.html">Технологии</a></li>
           <li><a href="page/contacts.html">Контакты</a></li>
         </ul>
@@ -67,89 +68,111 @@
   </header>
 
   <div class="containers">
-    <div class="container__products">
-      <div class="product ds-flex ai-center fd-column">
-        <h1 class="product__title">Наши продукты</h1>
-        <div class="product__items ds-grid">
-          <div class="product__items__preview ds-flex ai-center jc-center">CRM-<br />Платформа</div>
-          <span class="product__items__description">
-            это мультисистемное и многофункциональное программное
-            обеспечение, полностью разработанное B2IT и позволяющее
-            собирать максимально возможную аналитику (с внешних
-            и внутренних ресурсов и сервисов) по привлеченным клиентам,
-          </span>
-        </div>
-        <div class="product__items ds-grid">
-          <div class="product__items__preview ds-flex ai-center jc-center">Аудит</div>
-          <span class="product__items__description">
-            это программный продукт, позволяющий за счёт точечной
-            настройки (на основе исторических данных анализируемой
-            компании и плановых показателей, которые необходимо достичь)
-            проводить автоматический аудит компании, а также анализировать
-          </span>
-        </div>
-        <div class="product__items ds-grid">
-          <div class="product__items__preview ds-flex ai-center jc-center">Онлайн-<br />Аутсорс</div>
-          <span class="product__items__description">
-            Продукт "Онлайн-Аутсорс" - позволяет оптимизировать Ваш
-            онлайн бизнес за счёт переключения части Ваших процессов
-            через наш программный комплекс
-          </span>
-        </div>
-        <div class="product__mobile" style="display: none;">
-          <div class="product__mobile__item ds-flex ai-center fd-column">
-            <h1 class="product__mobile__item__preview">CRM-<br />Платформа</h1>
-            <span class="product__mobile__item__description">
-              это мультисистемное и многофункциональное программное
+    <!-- CON PRODUCT -->
+    <div class="container-products">
+      <div class="products">
+        <h1 class="products__title">Наши продукты</h1>
+        <!-- DESKTOP -->
+        <div class="products__item">
+          <h1 class="title-green">CRM-<br>Платформа</h1>
+          <div>
+            <p class="text-break-all">
+              - это мультисистемное и многофункциональное программное
               обеспечение, полностью разработанное B2IT и позволяющее
               собирать максимально возможную аналитику (с внешних
               и внутренних ресурсов и сервисов) по привлеченным клиентам,
-            </span>
+              <span class="products__item__more" style="display: none;">
+                а также на основе разработанных комплексных систем проверок позволяет проводить проверку кредитных
+                возможностей и прескоринга потенциальных клиентов (оставивших заявку и согласившихся с обработкой
+                персональных данных) перед дальнейшей продажей лидов в кредитные учреждения.
+              </span>
+            </p>
+            <button class="products__item__btn" onclick="moreText(0)">
+              Читать далее
+              <span style="font-size: 24px;">...</span></button>
           </div>
-          <div class="product__mobile__item">
-            <h1 class="product__mobile__item__preview">Аудит</h1>
-            <span class="product__mobile__item__description">
-              это программный продукт, позволяющий за счёт точечной
+        </div>
+        <div class="products__item">
+          <h1 class="title-green">Аудит</h1>
+          <div>
+            <p class="text-break-all">
+              - это программный продукт, позволяющий за счёт точечной
               настройки (на основе исторических данных анализируемой
               компании и плановых показателей, которые необходимо достичь)
               проводить автоматический аудит компании, а также анализировать
-            </span>
+              <span class="products__item__more" style="display: none;">
+                эффективность сотрудников в рамках выполнения поставленных задач.
+              </span>
+            </p>
+            <button class="products__item__btn" onclick="moreText(1)">
+              Читать далее
+              <span style="font-size: 24px;">...</span></button>
           </div>
-          <div class="product__mobile__item">
-            <h1 class="product__mobile__item__preview">Онлайн-<br />Аутсорс</h1>
-            <span class="product__mobile__item__description">
+        </div>
+        <div class="products__item">
+          <h1 class="title-green">Онлайн-<br>Аутсорс</h1>
+          <div>
+            <p class="text-break-all">
               Продукт "Онлайн-Аутсорс" - позволяет оптимизировать Ваш
               онлайн бизнес за счёт переключения части Ваших процессов
-              через наш программный комплекс
-            </span>
+              через наш программный комплекс.
+            </p>
           </div>
+        </div>
+        <!-- MOBILE -->
+        <div class="products__mobile-item" style="display: none;">
+          <h1 class="title-green">CRM-Платформа</h1>
+          <p class="text-break-all">
+            - это мультисистемное и многофункциональное программное
+            обеспечение, полностью разработанное B2IT и позволяющее
+            собирать максимально возможную аналитику (с внешних
+            и внутренних ресурсов и сервисов) по привлеченным клиентам,
+          </p>
+        </div>
+        <div class="products__mobile-item" style="display: none;">
+          <h1 class="title-green">Аудит</h1>
+          <p class="text-break-all">
+            - это программный продукт, позволяющий за счёт точечной
+            настройки (на основе исторических данных анализируемой
+            компании и плановых показателей, которые необходимо достичь)
+            проводить автоматический аудит компании, а также анализировать
+          </p>
+        </div>
+        <div class="products__mobile-item" style="display: none;">
+          <h1 class="title-green">Онлайн-Аутсорс</h1>
+          <p class="text-break-all">
+            Продукт "Онлайн-Аутсорс" - позволяет оптимизировать Ваш
+            онлайн бизнес за счёт переключения части Ваших процессов
+            через наш программный комплекс
+          </p>
         </div>
       </div>
     </div>
 
-    <div class="container__important ds-flex jc-center">
-      <div class="important ds-flex fd-column ai-center jc-center">
+    <!-- CON IMPORTANT -->
+    <div class="container-important">
+      <div class="important">
         <h1 class="important__title">Важно!</h1>
-        <div class="important__items ds-flex jc-center">
-          <div class="important__item ds-flex">
+        <div class="important__items">
+          <div class="important__item">
             <span class="important__item__number">1.</span>
             <span class="important__item__description">
-              Мы работаем за<br />
+              Мы работаем за<br>
               результат
             </span>
           </div>
           <div class="important__item">
             <span class="important__item__number">2.</span>
             <span class="important__item__description">
-              Все цены наших продуктов<br />
-              индивидуальны и зависят от <br />
+              Все цены наших продуктов<br>
+              индивидуальны и зависят от <br>
               требований Заказчика
             </span>
           </div>
           <div class="important__item">
             <span class="important__item__number">3.</span>
             <span class="important__item__description">
-              Мы работам без<br />
+              Мы работам без<br>
               предоплаты
             </span>
           </div>
@@ -160,73 +183,75 @@
       </div>
     </div>
 
-    <div class="container__advantages">
-      <div class="advantages ds-flex ai-center fd-column">
+    <!-- CON ADVANTAGES -->
+    <div class="container-advantages">
+      <div class="advantages">
         <h1 class="advantages__title">Почему именно мы?</h1>
         <span class="advantages__adv">Наши преимущества</span>
-        <div class="advantages__items ds-flex ai-center jc-center">
-          <div class="advantages__item ds-flex">
-            <img src="./img/adv-prevention.png" alt="Prevention" style="width: 74px; height: 91px;"/>
+        <div class="advantages__items">
+          <div class="advantages__item">
+            <img src="./image/adv-prevention.png" alt="Prevention">
             <div class="advantages__item__info">
               <h1>Предотвращение</h1>
-              <span>
-                Мы помогаем снизить уровень<br />
+              <p class="text-break-all">
+                Мы помогаем снизить уровень<br>
                 невозврата и просрочки.
-              </span>
+              </p>
             </div>
           </div>
-          <div class="advantages__item ds-flex">
-            <img src="./img/adv-improvement.png" alt="Improvement" style="width: 74px; height: 94px;"/>
+          <div class="advantages__item">
+            <img src="./image/adv-improvement.png" alt="Improvement">
             <div class="advantages__item__info">
               <h1>Улучшение</h1>
-              <span>
-                Повышаем показатели сбора<br />
+              <p class="text-break-all">
+                Повышаем показатели сбора<br>
                 задолженности.
-              </span>
+              </p>
             </div>
           </div>
-          <div class="advantages__item ds-flex">
-            <img src="./img/adv-optimization.png" alt="Optimization" style="width: 74px; height: 94px;"/>
+          <div class="advantages__item">
+            <img src="./image/adv-optimization.png" alt="Optimization">
             <div class="advantages__item__info">
               <h1>Оптимизация</h1>
-              <span>
-                Повышаем эффективность<br />
+              <p class="text-break-all">
+                Повышаем эффективность<br>
                 работы персонала.
-              </span>
+              </p>
             </div>
           </div>
-          <div class="advantages__item ds-flex">
-            <img src="./img/adv-forecasting.png" alt="Forecasting" style="width: 74px; height: 80px;"/>
+          <div class="advantages__item">
+            <img src="./image/adv-forecasting.png" alt="Forecasting">
             <div class="advantages__item__info">
               <h1>Прогнозирование</h1>
-              <span>
-                Увеличиваем прибыть компании и доход за счёт<br />
+              <p class="text-break-all">
+                Увеличиваем прибыть компании и доход за счёт<br>
                 роста производительности кредитного портфеля.
-              </span>
+              </p>
             </div>
           </div>
-          <div class="advantages__item ds-flex">
-            <img src="./img/adv-upgrowth.png" alt="Upgrowth" style="width: 74px; height: 94px;"/>
+          <div class="advantages__item">
+            <img src="./image/adv-upgrowth.png" alt="Upgrowth">
             <div class="advantages__item__info">
               <h1>Рост</h1>
-              <span>
-                Увеличиваем долю активного<br />
+              <p class="text-break-all">
+                Увеличиваем долю активного<br>
                 кредитного портфеля.
-              </span>
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container__useful">
-      <div class="useful ds-flex fd-column ai-center">
+    <!-- CON USEFUL -->
+    <div class="container-useful">
+      <div class="useful">
         <h1 class="useful__title">Кому полезно?</h1>
-        <div class="useful__items ds-flex fd-row">
-          <div class="useful__item ds-flex fd-column">
-            <img src="./img/useful-logo-green.png" alt="Useful" />
+        <div class="useful__items">
+          <div class="useful__item">
+            <img src="./image/useful-logo-green.png" alt="Useful">
             <h2 class="useful__item__title">МФО (МФК, МКК) и КПК</h2>
-            <ul class="useful__item__description custom-li-dot ds-flex fd-column">
+            <ul class="useful__item__description custom-li-dot">
               <li>Проведение аудита компании с целью достижения нужных бизнес показателей</li>
               <li>Оптимизация внутренних процессов</li>
               <li>Создание бизнес моделей или корректировка существующих</li>
@@ -234,10 +259,10 @@
               <li>Работаем за результат</li>
             </ul>
           </div>
-          <div class="useful__item ds-flex fd-column">
-            <img src="./img/useful-logo-gray.png" alt="Useful" />
+          <div class="useful__item">
+            <img src="./image/useful-logo-gray.png" alt="Useful">
             <h2 class="useful__item__title">Банки</h2>
-            <ul class="useful__item__description custom-li-dot ds-flex fd-column">
+            <ul class="useful__item__description custom-li-dot">
               <li>Мы работаем над повышением эффективности внутренних процессов компании</li>
               <li>Оптимизация внутренних процессов</li>
               <li>Мы проводим аудит компании, чтобы определить её сильные и слабые стороны и помочь достичь желаемых
@@ -250,12 +275,13 @@
       </div>
     </div>
 
-    <div class="container__directions">
-      <div class="directions ds-flex fd-column ai-center">
+    <!-- CON DIRECTIONS -->
+    <div class="container-directions">
+      <div class="directions">
         <h1 class="directions__title">Наши ключевые направления</h1>
-        <div class="directions__items ds-flex">
-          <div class="directions__items-left ds-flex fd-column jc-center">
-            <h1 class="directions__item__title">Риски и аналитика</h1>
+        <div class="directions__items">
+          <div class="directions__items-left">
+            <h1 class="directions__item__title title-green">Риски и аналитика</h1>
             <div class="directions__item__description">
               <ul>
                 <li>
@@ -273,9 +299,9 @@
               </ul>
             </div>
           </div>
-          <div class="directions__items-right ds-flex fd-column">
-            <div class="directions__item ds-flex fd-column">
-              <h1 class="directions__item__title">Маркетинг и<br>лидогенерация</h1>
+          <div class="directions__items-right">
+            <div class="directions__item">
+              <h1 class="directions__item__title title-green">Маркетинг и<br>лидогенерация</h1>
               <div class="directions__item__description">
                 <ul>
                   <li>Повышение воронки продаж</li>
@@ -284,8 +310,8 @@
                 </ul>
               </div>
             </div>
-            <div class="directions__item ds-flex fd-column">
-              <h1 class="directions__item__title">Администрация<br>(управление бизнесом)</h1>
+            <div class="directions__item">
+              <h1 class="directions__item__title title-green">Администрация<br>(управление бизнесом)</h1>
               <div class="directions__item__description">
                 <ul>
                   <li>Аутсорс и аудит действующего бизнеса</li>
@@ -298,81 +324,87 @@
         </div>
       </div>
     </div>
-    <div class="container__employ">
-      <div class="employ ds-flex ai-center fd-column">
+
+    <!-- EMPLOY -->
+    <div class="container-employ">
+      <div class="employ">
         <div class="employ__title">Мы используем</div>
-        <div class="employ__items ds-flex fd-row jc-center">
-          <div class="employ__item ds-flex ai-center fd-column">
-            <img src="./img/employ-star.png" alt="Star" />
-            <span class="employ__item__description">Открытые данные</span>
-            <span class="employ__item__poscript">
+        <div class="employ__items">
+          <div class="employ__item">
+            <img src="./image/employ-star.png" alt="Star">
+            <p class="employ__item__description">Открытые данные</p>
+            <p class="employ__item__poscript">
               Триггеры по клиентам на основе<br>
               открытых данных в сети интернет
-            </span>
+            </p>
           </div>
-          <div class="employ__item ds-flex ai-center fd-column">
-            <img src="./img/employ-star.png" alt="Star" />
-            <span class="employ__item__description">Данные заемщика</span>
+          <div class="employ__item">
+            <img src="./image/employ-star.png" alt="Star">
+            <p class="employ__item__description">Данные заемщика</p>
           </div>
-          <div class="employ__item ds-flex ai-center fd-column">
-            <img src="./img/employ-star.png" alt="Star" />
-            <span class="employ__item__description">Устройства клиента</span>
-            <span class="employ__item__poscript">
+          <div class="employ__item">
+            <img src="./image/employ-star.png" alt="Star">
+            <p class="employ__item__description">Устройства клиента</p>
+            <p class="employ__item__poscript">
               Данные позволяющие выявить<br>
               фрод и мошенников
-            </span>
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="container__service ds-flex jc-center">
+
+    <!-- SERVICE -->
+    <div class="container-service">
       <div class="service">
         <h1 class="service__title">Продукты от Б2АЙТИ</h1>
         <h1 class="service__title__mobile" style="display: none;">Наши продукты</h1>
-        <span class="service__description">
+        <p class="service__description">
           Наши продукты являются на 100% Российской разработкой и обслуживаются
           исключительно специалистами РФ на территории Российской Федерации
-        </span>
+        </p>
       </div>
     </div>
-    <div class="container__data ds-flex jc-center">
-      <div class="data ds-flex fd-column ai-center">
-        <div class="data__items ds-grid">
-          <div class="data__item ds-flex fd-row">
-            <img src="./img/data-credit.png" alt="Credit" style="width: 50px; height: 65px;">
-            <div class="data__item__info ds-flex fd-column">
+
+    <!-- DATA -->
+    <div class="container-data">
+      <div class="data">
+        <div class="data__items">
+          <div class="data__item">
+            <img src="./image/data-credit.png" alt="Credit" style="width: 50px; height: 65px;">
+            <div class="data__item__info">
               <h1 class="data__item__title title-green">Кредитную историю клиента</h1>
-              <span class="data__item__description">
+              <p class="data__item__description text-break-all">
                 Долговая нагрузка, платежная
                 дисциплина, качество клиентов
-              </span>
+              </p>
             </div>
           </div>
-          <div class="data__item ds-flex fd-row">
-            <img src="./img/data-ip.png" alt="IP" style="width: 50px; height: 50px;">
-            <div class="data__item__info ds-flex fd-column">
+          <div class="data__item">
+            <img src="./image/data-ip.png" alt="IP" style="width: 50px; height: 50px;">
+            <div class="data__item__info">
               <h1 class="data__item__title title-green">IP клиента</h1>
-              <span class="data__item__description">
+              <p class="data__item__description text-break-all">
                 Информация о месте проживания клиента, его регистрации и факт нахождения по ip
-              </span>
+              </p>
             </div>
           </div>
-          <div class="data__item ds-flex fd-row">
-            <img src="./img/data-fine.png" alt="Fine" style="width: 50px; height: 53px;">
-            <div class="data__item__info ds-flex fd-column">
+          <div class="data__item">
+            <img src="./image/data-fine.png" alt="Fine" style="width: 50px; height: 53px;">
+            <div class="data__item__info">
               <h1 class="data__item__title title-green">Штрафы и обременения</h1>
-              <span class="data__item__description">
+              <p class="data__item__description text-break-all">
                 Информация из ФССП
-              </span>
+              </p>
             </div>
           </div>
-          <div class="data__item ds-flex fd-row">
-            <img src="./img/data-document.png" alt="Document" style="width: 50px; height: 64px;">
-            <div class="data__item__info ds-flex fd-column">
+          <div class="data__item">
+            <img src="./image/data-document.png" alt="Document" style="width: 50px; height: 64px;">
+            <div class="data__item__info">
               <h1 class="data__item__title title-green">Подлинность документов</h1>
-              <span class="data__item__description">
+              <p class="data__item__description text-break-all">
                 Проверка Паспорта, ИНН, СНИЛС и прочих требуемых документов из государственных баз данных
-              </span>
+              </p>
             </div>
           </div>
         </div>
@@ -381,15 +413,15 @@
   </div>
 
   <footer class="footer">
-    <img src="/assets/img/logo.png" />
+    <a href="/index.html"><img src="/assets/img/logo.png" alt="Logo"></a>
     <div class="footer__description">
-      ООО «В2 АЙТИ», ИНН 6311195346, КПП 631101001, ОГРН 1226300048017, р/с 40702810854400077509, к/с<br />
+      ООО «В2 АЙТИ», ИНН 6311195346, КПП 631101001, ОГРН 1226300048017, р/с 40702810854400077509, к/с<br>
       30101810200000000607 в ПАО Сбербанк, БИК 043601607, 443093, г. Самара, ул. Мориса Тореза 1А, офис 513А
     </div>
   </footer>
 
-  <script src="assets/js/input-patternt.js"></script>
-  <script src="assets/js/hamburger.js"></script>
+  <script src="/assets/js/hamburger.js"></script>
+  <script src="./js/product.js"></script>
 
 </body>
 

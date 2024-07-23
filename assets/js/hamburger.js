@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   let burger = document.querySelector(".header__burger");
-  let menu = $(".header__bottom-row");
+  let menu = $(".header__nav");
 
   burger.addEventListener("click", function () {
     if (burger.classList.contains("active")) {

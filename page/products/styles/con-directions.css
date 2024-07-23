@@ -16,7 +16,10 @@
 }
 
 .directions {
-  background-image: url("../img/directions-bg.svg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../image/directions-bg.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -28,6 +31,7 @@
 }
 
 .directions__items {
+  display: flex;
   margin-top: 55px;
   flex-direction: row;
   gap: 150px;
@@ -39,20 +43,28 @@
 }
 
 .directions__items-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: flex-end;
   text-align: right;
 }
 
 .directions__items-right {
+  display: flex;flex-direction: column;
   align-items: flex-start;
   text-align: left;
   gap: 390px;
 }
 
+.directions__item {
+  display: flex;
+  flex-direction: column;
+}
+
 .directions__item__title {
   font-size: 22px;
   font-weight: 500;
-  color: #01C201;
 }
 
 .directions__item__description {

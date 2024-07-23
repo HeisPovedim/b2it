@@ -39,27 +39,6 @@
   color: #34BF34;
 }
 
-/* DISPLAY FLEX */
-.ds-flex {
-  display: flex;
-}
-
-.ds-grid {
-  display: grid;
-}
-
-.jc-center {
-  justify-content: center;
-}
-
-.ai-center {
-  align-items: center;
-}
-
-.fd-column {
-  flex-direction: column;
-}
-
-.fd-row {
-  flex-direction: row;
+.text-break-all {
+  word-break: break-all;
 }
