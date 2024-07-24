@@ -21,6 +21,8 @@
  *********/
 
 @media (max-width: 1140px) {
+
+  /* USEFUL */
   .useful__items {
     flex-direction: column !important;
     align-items: center;
@@ -34,7 +36,6 @@
 @media (max-width: 900px) {
 
   /* IMPORTANT */
-
   .important__items {
     flex-direction: column;
   }

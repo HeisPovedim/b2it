@@ -22,6 +22,7 @@
  *********/
 
 @media (max-width: 1200px) {
+  /* TARGET */
   .target::before {
     position: relative;
     top: 0;

@@ -1,0 +1,25 @@
+/**************
+ * CONTAINERS *
+ **************/
+
+.containers {
+  margin-top: clamp(40px, calc(9vw + (1000px - 100%) * -0.2), 90px);
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: clamp(70px, calc(12vw + (1000px - 100%) * -0.2), 120px);
+}
+
+.container-list-technologies {
+  display: flex;
+  justify-content: center;
+}
+
+.container-products {
+  margin-top: clamp(90px, calc(13vw + (1000px - 100%) * -0.2), 130px);
+}
+
+.container-map {
+  margin-top: clamp(70px, calc(14vw + (1000px - 100%) * -0.2), 140px);
+  display: flex;
+  justify-content: center;
+}
