@@ -85,3 +85,214 @@
     margin-top: 16px !important;
   }
 }
+
+/*********************
+ * LIST-TECHNOLOGIES *
+ *********************/
+
+.list-technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.list-technologies__title {
+  font-size: clamp(28px, 6vw, 40px);
+  font-weight: 700;
+}
+
+.list-technologies__description {
+  margin-top: 15px;
+  font-size: clamp(16px, 6vw, 18px);
+  line-height: 28px;
+  width: min(1002px, 100%);
+}
+
+.list-technologies__list {
+  margin-top: clamp(70px, calc(13vw + (1000px - 100%) * -0.2), 130px);
+  width: min(1200px, 100%);
+}
+
+.list-technologies__list__title {
+  margin-bottom: clamp(35px, calc(5.5vw + (1000px - 100%) * -0.2), 55px);
+  font-size: clamp(20px, 6vw, 24px);
+  font-weight: 600;
+}
+
+.list-technologies__list__items,
+.list-technologies__items-more {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.list-technologies__list__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  min-height: 92px;
+  padding: 15px clamp(20px, 2.5vw, 25px);
+  border: 0.5px solid #8C8C8C;
+  border-radius: 20px;
+}
+
+.list-technologies__list__item p {
+  font-size: clamp(14px, 6vw, 18px);
+}
+
+/*******
+ * MAP *
+ *******/
+
+.map {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: min(1200px, 100%);
+  min-height: 477px;
+  background-image: url('/assets/img/map.png');
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  padding-right: 20px;
+}
+
+.map-info {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  background-color: #262626;
+  border-radius: 26px;
+  padding: 70px;
+}
+
+.map-info__title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.map-info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.map-info ul li {
+  position: relative;
+}
+
+.map-info ul li:first-child::before {
+  content: url("/assets/img/point.png");
+  position: absolute;
+  left: -25px;
+}
+
+.map-info ul li:nth-child(2)::before {
+  content: url("/assets/img/mail.png");
+  position: absolute;
+  left: -26px;
+}
+
+.map-info ul li:last-child:before {
+  content: url("/assets/img/phone.png");
+  position: absolute;
+  left: -23px;
+}
+
+/***********
+ * PRODUCT *
+ ***********/
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.products__title {
+  font-size: clamp(28px, 6vw, 40px);
+  font-weight: 700;
+}
+
+.products__description {
+  font-size: clamp(16px, 6vw, 18px);
+  text-align: center;
+  margin-top: 18px;
+}
+
+.products-items {
+  margin-top: clamp(25px, calc(5.5vw + (1000px - 100%) * -0.2), 55px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.products-item {
+  padding: 55px 30px 80px 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1D1D1D;
+  border-radius: 40px;
+  max-width: 388px;
+  min-height: 510px;
+}
+
+.products-item__title {
+  font-size: clamp(25px, 6vw, 30px);
+  font-weight: 600;
+  text-align: center;
+}
+
+.products-item__description {
+  margin-top: 55px;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: left;
+}
+
+.products-items .products-item:last-child .products-item__description {
+  margin-top: 90px;
+}
+
+.products__item__btn {
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFFFFF80;
+  margin-top: 20px;
+  text-align: left;
+}
+
+/**************
+ * CONTAINERS *
+ **************/
+
+.containers {
+  margin-top: clamp(40px, calc(9vw + (1000px - 100%) * -0.2), 90px);
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: clamp(70px, calc(12vw + (1000px - 100%) * -0.2), 120px);
+}
+
+.container-list-technologies {
+  display: flex;
+  justify-content: center;
+}
+
+.container-products {
+  margin-top: clamp(90px, calc(13vw + (1000px - 100%) * -0.2), 130px);
+}
+
+.container-map {
+  margin-top: clamp(70px, calc(14vw + (1000px - 100%) * -0.2), 140px);
+  display: flex;
+  justify-content: center;
+}
